@@ -9,4 +9,3 @@ function solve(args) {
         console.log('false ' + thirdDigit)
     }
 }
-
