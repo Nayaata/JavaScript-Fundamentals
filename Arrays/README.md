@@ -5,10 +5,10 @@ Homework: Arrays
 
 ### Problem List
 
-1. [Increase array members](./1. Increase array members)
-1. [Lexicographically comparison](./2. Lexicographically comparison)
-1. [Maximal sequence ](./3. Maximal sequence)
-1. [Maximal increasing sequence](./4. Maximal increasing sequence)
-1. [Selection sort](./5. Selection sort)
-1. [Most frequent number](./6. Most frequent number)
-1. [Binary search](./7. Binary search)
+1. [Increase array members](./01. Increase array members)
+1. [Lexicographically comparison](./02. Lexicographically comparison)
+1. [Maximal sequence ](./03. Maximal sequence)
+1. [Maximal increasing sequence](./04. Maximal increasing sequence)
+1. [Selection sort](./05. Selection sort)
+1. [Most frequent number](./06. Most frequent number)
+1. [Binary search](./07. Binary search)
