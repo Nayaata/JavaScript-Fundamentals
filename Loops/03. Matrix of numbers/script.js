@@ -4,12 +4,9 @@ function solve(args) {
         row,
         col;
 
-    for(row = 0; row < N; row += 1){
-
+    for(row = 1; row < N; row += 1){
         matrix[row] = '';
-        var fillMatrix = row + 1;
-
-        for(col = 0; col < N; col += 1){
+        for(col = row; col < N; col += 1){
             matrix[row] += String(fillMatrix) + ' ';
             fillMatrix += 1;
         }

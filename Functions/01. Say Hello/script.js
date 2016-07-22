@@ -1,6 +1,10 @@
 function solve(args) {
-    var a = +args[0],
-        b = +args[1];
+    var name = args[0];
 
+    function printName(name){
+        console.log('Hello, '+ name + '!');
+    }
 
+    return printName(name);
 }
+

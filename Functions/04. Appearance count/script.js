@@ -1,4 +1,54 @@
 function solve(args) {
+    var N = +args[0],
+        numbers = args[1].split(' ').map(Number),
+        X = +args[2],
+        appearance = 0;
+
+    function appearanceCount(numbers, X){
+        var len = numbers.length,
+            index;
+        
+        for(index = 0; index < len; index += 1){
+            var position = numbers[index];
+            
+            if(position === X){
+                appearance += 1;
+            }
+        }
+        
+        return appearance;
+    }
+
+    return appearanceCount(numbers, X);
+}
+
+/*
+function solve(args) {
+    var input = args[0].split(' ').map(Number),
+        N = +input[0],
+        X = +input[2],
+        appearance = 0;
+
+    function appearanceCount(numbers){
+        var len = numbers.length,
+            index;
+        
+        for(index = 0; index < len; index += 1){
+            var position = numbers[index];
+            
+            if(position === X){
+                appearance += 1;
+            }
+        }
+        
+        return appearance;
+    }
+
+    return appearanceCount(input);
+}
+*/
+/*
+function solve(args) {
     var array = +args[0].split(' ').map(Number),
         X = +array[2],
         position,
@@ -20,3 +70,4 @@ function solve(args) {
 
     return appearanceCount(array);
 }
+*/

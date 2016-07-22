@@ -1,6 +1,11 @@
 function solve(args) {
-    var a = +args[0],
-        b = +args[1];
+    
+    var regExTag = new RegExp('<a href="(.*?)">(.*?)</a>', "g");
+   
+    var newText = args[0].replace(regExTag, function (none, href, content) {
+        
+            return '[' + content + '](' + href + ')';      
+    });
 
-
+    console.log(newText);
 }

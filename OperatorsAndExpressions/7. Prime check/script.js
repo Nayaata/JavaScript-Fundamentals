@@ -4,6 +4,26 @@ function solve(args) {
         divider = 2,
         isPrime = true;
 
+    if(num < divider){
+        isPrime = false;
+    } else {
+        for(var i = divider; i <= maxDivider; i += 1){
+            if(num % i === 0){
+                isPrime = false;
+                break;
+            }
+        }
+    }
+
+    console.log(isPrime);
+}
+/*
+function solve(args) {
+    var num = +args[0],
+        maxDivider = Math.sqrt(num),
+        divider = 2,
+        isPrime = true;
+
         while(isPrime && (divider <= maxDivider)){
             if(!(num % divider)){
                 isPrime = false;
@@ -35,22 +55,3 @@ function solve(args) {
 }
 
 //3rd try - 100points
-function solve(args) {
-    var num = +args[0],
-        maxDivider = Math.sqrt(num),
-        divider = 2,
-        isPrime = true;
-
-    if(num < divider){
-        isPrime = false;
-    } else {
-        for(var i = divider; i <= maxDivider; i += 1){
-            if(num % i === 0){
-                isPrime = false;
-                break;
-            }
-        }
-    }
-
-    console.log(isPrime);
-}

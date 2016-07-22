@@ -82,6 +82,6 @@ function solve(args) {
  min = c;
  }
 
- console.log('min=' + min.toFixed(2) + '\nmax=' +max.toFixed(2) +'\nsum=' + sum.toFixed(2) + '\navg=' + avg.toFixed(2));
+ console.log('min=' + min.toFixed(2) + '\nmax=' + max.toFixed(2) + '\nsum=' + sum.toFixed(2) + '\navg=' + avg.toFixed(2));
  }
  */
